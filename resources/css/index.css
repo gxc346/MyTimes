@@ -1,20 +1,36 @@
-.header {
+body {
+  margin: 0px;
+}
+
+header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   display: flex;
   width: 100%;
-  justify-content: space-between;
   border-bottom: 1px solid black;
   height: 80px;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 .logo {
   display: flex;
-  color: MediumAquamarine;
   align-items: center;
-  justify-content: space-around;
-  width: 180px;
+  width: 1500px;
+  height: 65px;
+  border: 1px solid black;
+  padding-left: 30px;
+}
+
+.logo img {
+  margin-right: 12px;
+}
+
+.logo span {
+  color: MediumAquamarine;
 }
 
 .nav a {
@@ -24,10 +40,47 @@
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 30px
+}
+
+header nav {
+  padding-right: 40px;
 }
 
 .nav span{
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px 10px;
+}
+
+.content {
+  display: flex;
+  border: 1px solid black;
+  width: 1200px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 75px;
+  margin-left: auto;
+  padding-top: 115px;
+}
+
+.column.large{
+  width: 630px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+div {
+  border: 1px solid black;
 }
